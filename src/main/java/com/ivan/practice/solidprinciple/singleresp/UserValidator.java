@@ -1,4 +1,4 @@
-package practice.principle.singleresp;
+package com.ivan.practice.solidprinciple.singleresp;
 
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;

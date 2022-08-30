@@ -1,11 +1,11 @@
-package com.cpc.dp.builder;
+package com.ivan.practice.pattern.builder;
 
 //Interface implemented by "products"
 public interface UserDTO {
-	
-	String getName();
 
-	String getAddress();
+    String getName();
 
-	String getAge();
+    String getAddress();
+
+    String getAge();
 }

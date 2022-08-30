@@ -1,4 +1,4 @@
-package practice.principle.depinv;
+package com.ivan.practice.solidprinciple.depinv;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;

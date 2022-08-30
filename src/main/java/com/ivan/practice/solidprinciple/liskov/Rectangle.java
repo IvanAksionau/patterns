@@ -1,4 +1,4 @@
-package practice.principle.liskov;
+package com.ivan.practice.solidprinciple.liskov;
 
 public class Rectangle implements Shape {
 

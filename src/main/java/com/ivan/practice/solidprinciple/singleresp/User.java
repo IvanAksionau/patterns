@@ -1,4 +1,4 @@
-package practice.principle.singleresp;
+package com.ivan.practice.solidprinciple.singleresp;
 
 //User
 public class User {

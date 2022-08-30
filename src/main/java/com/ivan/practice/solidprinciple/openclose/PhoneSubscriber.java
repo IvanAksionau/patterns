@@ -1,4 +1,4 @@
-package practice.principle.openclose;
+package com.ivan.practice.solidprinciple.openclose;
 
 import java.util.List;
 

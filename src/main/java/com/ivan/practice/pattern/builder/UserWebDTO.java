@@ -1,36 +1,34 @@
-package com.cpc.dp.builder;
+package com.ivan.practice.pattern.builder;
 
 //A product in builder pattern
 public class UserWebDTO implements UserDTO {
 
-	private String name;
-	
-	private String address;
-	
-	private String age;
+    private final String name;
 
-	public UserWebDTO(String name, String address, String age) {
-		this.name = name;
-		this.address = address;
-		this.age = age;
-	}
-	
-	public String getName() {
-		return name;
-	}
+    private final String address;
 
-	public String getAddress() {
-		return address;
-	}
+    private final String age;
 
-	public String getAge() {
-		return age;
-	}
+    public UserWebDTO(String name, String address, String age) {
+        this.name = name;
+        this.address = address;
+        this.age = age;
+    }
 
-	@Override
-	public String toString() {
-		return "name=" + name + "\nage=" + age + "\naddress=" + address ;
-	}
-	
-	
+    public String getName() {
+        return name;
+    }
+
+    public String getAddress() {
+        return address;
+    }
+
+    public String getAge() {
+        return age;
+    }
+
+    @Override
+    public String toString() {
+        return "name=" + name + "\nage=" + age + "\naddress=" + address;
+    }
 }

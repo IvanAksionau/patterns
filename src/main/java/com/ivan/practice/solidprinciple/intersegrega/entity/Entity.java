@@ -1,4 +1,4 @@
-package practice.principle.intersegrega.entity;
+package com.ivan.practice.solidprinciple.intersegrega.entity;
 
 //Base class for all entities
 public abstract class Entity {

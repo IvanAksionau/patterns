@@ -1,4 +1,4 @@
-package practice.principle.depinv;
+package com.ivan.practice.solidprinciple.depinv;
 
 import java.time.LocalDateTime;
 import java.time.ZoneId;

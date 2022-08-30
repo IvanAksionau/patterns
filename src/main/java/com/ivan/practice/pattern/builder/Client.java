@@ -1,8 +1,8 @@
-package com.cpc.dp.builder;
+package com.ivan.practice.pattern.builder;
 
 import java.time.LocalDate;
 
-//This is our client which also works as "director"
+//Builder pattern is useful for creation of a complex objects of a class
 public class Client {
 
 	public static void main(String[] args) {

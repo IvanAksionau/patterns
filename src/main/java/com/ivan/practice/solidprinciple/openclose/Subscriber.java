@@ -1,4 +1,4 @@
-package practice.principle.openclose;
+package com.ivan.practice.solidprinciple.openclose;
 
 //base class - closed for modification, but open for extension
 public abstract class Subscriber {

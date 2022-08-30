@@ -1,4 +1,4 @@
-package practice.principle.singleresp;
+package com.ivan.practice.solidprinciple.singleresp;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 

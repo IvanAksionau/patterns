@@ -1,4 +1,4 @@
-package practice.principle.depinv;
+package com.ivan.practice.solidprinciple.depinv;
 
 public interface Formatter {
 

@@ -1,6 +1,6 @@
-package practice.principle.intersegrega.service;
+package com.ivan.practice.solidprinciple.intersegrega.service;
 
-import practice.principle.intersegrega.entity.Entity;
+import com.ivan.practice.solidprinciple.intersegrega.entity.Entity;
 
 //common interface to be implemented by all persistence services. 
 public interface PersistenceService<T extends Entity> {

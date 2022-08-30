@@ -1,6 +1,6 @@
-package practice.principle.intersegrega.service;
+package com.ivan.practice.solidprinciple.intersegrega.service;
 
-import practice.principle.intersegrega.entity.User;
+import com.ivan.practice.solidprinciple.intersegrega.entity.User;
 
 import java.util.HashMap;
 import java.util.List;

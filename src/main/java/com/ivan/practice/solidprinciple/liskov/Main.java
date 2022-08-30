@@ -1,4 +1,4 @@
-package practice.principle.liskov;
+package com.ivan.practice.solidprinciple.liskov;
 
 //we should be able to substitute base clas object with the child class object
 // without altering of the program behaviour
