@@ -1,6 +1,5 @@
 package com.ivan.practice.pattern.factorymethod;
 
-
 import com.ivan.practice.pattern.factorymethod.message.Message;
 
 public class Client {
