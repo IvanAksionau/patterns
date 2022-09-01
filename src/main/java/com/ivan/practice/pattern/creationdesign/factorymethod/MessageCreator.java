@@ -1,7 +1,7 @@
-package com.ivan.practice.pattern.factorymethod;
+package com.ivan.practice.pattern.creationdesign.factorymethod;
 
 
-import com.ivan.practice.pattern.factorymethod.message.Message;
+import com.ivan.practice.pattern.creationdesign.factorymethod.message.Message;
 
 /**
  * This is our abstract "creator".

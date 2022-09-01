@@ -1,4 +1,4 @@
-package com.ivan.practice.pattern.builder;
+package com.ivan.practice.pattern.creationdesign.builder;
 
 //A product in builder pattern
 public class UserWebDTO implements UserDTO {

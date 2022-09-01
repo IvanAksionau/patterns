@@ -1,4 +1,4 @@
-package com.ivan.practice.pattern.builder2;
+package com.ivan.practice.pattern.creationdesign.builder2;
 
 import com.cpc.dp.builder.Address;
 

@@ -1,4 +1,4 @@
-package com.ivan.practice.pattern.simplefactory;
+package com.ivan.practice.pattern.creationdesign.simplefactory;
 
 /**
  * This class acts as a simple factory for creation of

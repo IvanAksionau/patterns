@@ -1,4 +1,4 @@
-package com.ivan.practice.pattern.factorymethod.message;
+package com.ivan.practice.pattern.creationdesign.factorymethod.message;
 
 public class TextMessage extends Message {
 

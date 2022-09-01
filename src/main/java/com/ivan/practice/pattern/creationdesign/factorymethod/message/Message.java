@@ -1,4 +1,4 @@
-package com.ivan.practice.pattern.factorymethod.message;
+package com.ivan.practice.pattern.creationdesign.factorymethod.message;
 
 /**
  * This class represents interface for our "product" which is a message

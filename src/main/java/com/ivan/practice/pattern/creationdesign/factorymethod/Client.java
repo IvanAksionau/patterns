@@ -1,6 +1,6 @@
-package com.ivan.practice.pattern.factorymethod;
+package com.ivan.practice.pattern.creationdesign.factorymethod;
 
-import com.ivan.practice.pattern.factorymethod.message.Message;
+import com.ivan.practice.pattern.creationdesign.factorymethod.message.Message;
 
 /**
  * Use factory method pattern when you want to delegate object instantiation to subclasses

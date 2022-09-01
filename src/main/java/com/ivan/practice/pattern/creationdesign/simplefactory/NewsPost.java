@@ -1,4 +1,4 @@
-package com.ivan.practice.pattern.simplefactory;
+package com.ivan.practice.pattern.creationdesign.simplefactory;
 
 import java.time.LocalDate;
 

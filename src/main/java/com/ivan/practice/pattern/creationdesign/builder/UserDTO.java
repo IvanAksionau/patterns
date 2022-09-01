@@ -1,4 +1,4 @@
-package com.ivan.practice.pattern.builder;
+package com.ivan.practice.pattern.creationdesign.builder;
 
 //Interface implemented by "products"
 public interface UserDTO {
