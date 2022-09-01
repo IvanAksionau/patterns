@@ -8,6 +8,8 @@ import com.ivan.practice.pattern.creationdesign.abstractfactory.gcp.GoogleResour
  * Abstract factory is used when we have two or more objects which work together forming a
  * set and there can be multiple sets that can be created by client code.
  * So we separate client code from concrete objects forming such a set and from the code which creates these sets.
+ * Abstract factory uses factory method pattern.
+ * javax.xml.parsers.DocumentBuilderFactory is an example
  */
 public class Client {
 
