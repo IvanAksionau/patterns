@@ -1,5 +1,8 @@
 package com.ivan.practice.pattern.creationdesign.singleton;
 
+/**
+ * java.lang.Runtime is exa`mple of Singleton pattern
+ */
 public class Client {
 
     public static void main(String[] args) {
