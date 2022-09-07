@@ -1,6 +1,7 @@
 package com.ivan.practice.pattern.creationdesign.builder2;
 
-import com.cpc.dp.builder.Address;
+
+import com.ivan.practice.pattern.creationdesign.builder.Address;
 
 import java.time.LocalDate;
 import java.time.Period;
