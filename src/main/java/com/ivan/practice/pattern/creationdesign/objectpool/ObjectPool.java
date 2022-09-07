@@ -3,16 +3,15 @@ package com.ivan.practice.pattern.creationdesign.objectpool;
 import java.util.concurrent.BlockingQueue;
 import java.util.concurrent.LinkedBlockingQueue;
 import java.util.function.Supplier;
+import java.util.stream.IntStream;
 
 public class ObjectPool<T extends Poolable> {
 
     private final BlockingQueue<T> availablePool;
 
-    public ObjectPool(Supplier<T> creator, int count) {
+    public ObjectPool(Supplier<T> creator, int range) {
         availablePool = new LinkedBlockingQueue<>();
-        for (int i = 0; i < count; i++) {
-            availablePool.offer(creator.get());
-        }
+        IntStream.range(0, range).forEach(i -> availablePool.offer(creator.get()));
     }
 
     public T get() {
