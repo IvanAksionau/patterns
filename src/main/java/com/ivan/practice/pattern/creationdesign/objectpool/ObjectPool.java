@@ -21,6 +21,7 @@ public class ObjectPool<T extends Poolable> {
         } catch (InterruptedException ex) {
             System.err.println("take() was interrupted");
         }
+        // TODO: 9/7/2022 Here we need to decide if we want to wait till the object is free or we create a new one
         return null;
     }
 
