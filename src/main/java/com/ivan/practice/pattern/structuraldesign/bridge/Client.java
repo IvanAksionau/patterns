@@ -6,7 +6,7 @@ package com.ivan.practice.pattern.structuraldesign.bridge;
  * <p>
  * We achieve this feat by creating two separate inheritance hierarchies -
  * one for implementation and another for abstraction.
- * En example of usage is
+ * En example of usage is java.sql.DriverManager class with the java.sql.Driver interface from a bridge pattern
  */
 public class Client {
 
