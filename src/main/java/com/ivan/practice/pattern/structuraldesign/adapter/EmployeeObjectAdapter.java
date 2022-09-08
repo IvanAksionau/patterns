@@ -2,6 +2,7 @@ package com.ivan.practice.pattern.structuraldesign.adapter;
 
 /**
  * An object adapter. Using composition to translate interface
+ * This can be used in case if 'Customer' is presented as class rather then interface.
  */
 public class EmployeeObjectAdapter implements Customer {
 
