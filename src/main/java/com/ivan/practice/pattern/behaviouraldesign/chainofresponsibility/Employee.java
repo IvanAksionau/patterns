@@ -3,19 +3,19 @@ package com.ivan.practice.pattern.behaviouraldesign.chainofresponsibility;
 //Abstract handler
 public abstract class Employee implements LeaveApprover {
 
-    private final String role;
+    private final String roleName;
 
-    private final LeaveApprover successor;
+    private final LeaveApprover nextApprover;
 
-    public Employee(String role, LeaveApprover successor) {
-        this.role = role;
-        this.successor = successor;
+    public Employee(String roleName, LeaveApprover nextApprover) {
+        this.roleName = roleName;
+        this.nextApprover = nextApprover;
     }
 
     @Override
-    public void processLeaveApplication(LeaveApplication application) {
-        if (!processRequest(application) && successor != null) {
-            successor.processLeaveApplication(application);
+    public void processLeaveRequest(LeaveApplication application) {
+        if (!processRequest(application) && nextApprover != null) {
+            nextApprover.processLeaveRequest(application);
         }
     }
 
@@ -23,6 +23,6 @@ public abstract class Employee implements LeaveApprover {
 
     @Override
     public String getApproverRole() {
-        return role;
+        return roleName;
     }
 }

@@ -23,7 +23,7 @@ public class Client {
         System.out.println(application);
         System.out.println("**************************************************");
         LeaveApprover approver = createChain();
-        approver.processLeaveApplication(application);
+        approver.processLeaveRequest(application);
         System.out.println(application);
     }
 
