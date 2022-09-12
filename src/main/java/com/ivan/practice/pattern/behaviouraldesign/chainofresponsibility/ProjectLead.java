@@ -8,7 +8,7 @@ public class ProjectLead extends Employee {
     }
 
     @Override
-    protected boolean processRequest(LeaveApplication application) {
+    protected boolean processRequestType(LeaveApplication application) {
         //type is sick leave & duration is less than or equal to 2 days
         if (application.getType() == LeaveApplication.Type.Sick) {
             if (application.getNoOfDays() <= 2) {

@@ -14,12 +14,12 @@ public abstract class Employee implements LeaveApprover {
 
     @Override
     public void processLeaveRequest(LeaveApplication application) {
-        if (!processRequest(application) && nextApprover != null) {
+        if (!processRequestType(application) && nextApprover != null) {
             nextApprover.processLeaveRequest(application);
         }
     }
 
-    protected abstract boolean processRequest(LeaveApplication application);
+    protected abstract boolean processRequestType(LeaveApplication application);
 
     @Override
     public String getApproverRole() {

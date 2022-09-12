@@ -8,7 +8,7 @@ public class Director extends Employee {
     }
 
     @Override
-    protected boolean processRequest(LeaveApplication application) {
+    protected boolean processRequestType(LeaveApplication application) {
         if (application.getType() == LeaveApplication.Type.PTO) {
             application.approve(getApproverRole());
             return true;

@@ -8,7 +8,7 @@ public class Manager extends Employee {
     }
 
     @Override
-    protected boolean processRequest(LeaveApplication application) {
+    protected boolean processRequestType(LeaveApplication application) {
         switch (application.getType()) {
             case Sick:
                 application.approve(getApproverRole());
