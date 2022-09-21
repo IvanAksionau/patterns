@@ -5,12 +5,20 @@ import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
 import java.util.stream.Collectors;
+import java.util.stream.DoubleStream;
 import java.util.stream.IntStream;
 import java.util.stream.Stream;
 
 public class Test {
 
     public static void main(String[] args) {
+        double sum1 = DoubleStream.of(1, 2, 3, 4)
+                .filter(e -> e > 2)
+                .peek(e -> System.out.println("Filtered value: " + e))
+                .map(e -> e * e)
+                .peek(e -> System.out.println("Mapped value: " + e))
+                .sum();
+
         int sum = Stream.of(1, 2, 3, 4, 5)
                 .mapToInt(Integer::intValue)
                 .sum();
@@ -27,6 +35,7 @@ public class Test {
                 new Student("10"),
                 new Student("14"),
                 new Student("7"));
+
     }
 
     public static List<Student> sortStudentListByAverageMarkAsc(List<Student> list) {
