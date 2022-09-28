@@ -22,6 +22,8 @@ public class Test {
         int sum = Stream.of(1, 2, 3, 4, 5)
                 .mapToInt(Integer::intValue)
                 .sum();
+        String[] array = {"a", "b", "c", "d", "e"};
+        List<String> strings = Arrays.asList(array);
 
         List<Student> students = Arrays.asList(
                 new Student("2"),

@@ -2,6 +2,7 @@ package com.ivan.practice.logicaltask;
 
 public class LuckyTicket {
 
+    @Init(name = "is")
     public static boolean isLucky(int n) {
         int sum1 = 0;
         int sum2 =0;
