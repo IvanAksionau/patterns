@@ -24,5 +24,15 @@ public class SQL_INSERT {
      *
      * ---------------------------INNER JOIN-----------------------------------------------------------
      * SELECT products.name, orders.order_time FROM orders INNER JOIN products ON orders.product_id=products.id;
+     *
+     *
+     *
+     * Database Constraints:
+     * A database constraint is a rule applied to the data stored in the database
+     * • Not Null-Column is not allowed to have null values
+     * • Unique - Column value must be unique
+     * • Primary Key - Identifier of row, combines Not Null and Unique
+     * • Foreign Key - Value must exist in referenced (foreign) table aka, referential integrity
+     * • Check Constraint - Sets condition on data - like min max, or list of values (ENUM)
      */
 }

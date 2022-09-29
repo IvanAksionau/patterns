@@ -12,6 +12,11 @@ import java.util.stream.Stream;
 public class Test {
 
     public static void main(String[] args) {
+        /*
+          'peek' Returns a stream consisting of the elements of this stream,
+          additionally performing the provided action on each element
+          as elements are consumed from the resulting stream.
+         */
         double sum1 = DoubleStream.of(1, 2, 3, 4)
                 .filter(e -> e > 2)
                 .peek(e -> System.out.println("Filtered value: " + e))
@@ -22,8 +27,14 @@ public class Test {
         int sum = Stream.of(1, 2, 3, 4, 5)
                 .mapToInt(Integer::intValue)
                 .sum();
+
         String[] array = {"a", "b", "c", "d", "e"};
         List<String> strings = Arrays.asList(array);
+
+        strings.forEach(book1 -> {
+            System.out.println(book1);
+            System.out.println(book1);
+        });
 
         List<Student> students = Arrays.asList(
                 new Student("2"),
