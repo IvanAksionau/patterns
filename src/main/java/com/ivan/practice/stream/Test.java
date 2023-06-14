@@ -6,7 +6,6 @@ import java.util.Comparator;
 import java.util.List;
 import java.util.stream.Collectors;
 import java.util.stream.DoubleStream;
-import java.util.stream.IntStream;
 import java.util.stream.Stream;
 
 public class Test {
@@ -99,16 +98,13 @@ public class Test {
     }
 
     public static double getAverageStudentsMark(List<Student> list) {
-        IntStream intStream = list.stream()
-                .mapToInt(it -> Integer.parseInt(it.getMark()));
-
-        return intStream
+        return list.stream()
+                .mapToInt(it -> Integer.parseInt(it.getMark()))
                 .average()
                 .orElseGet(null);
     }
 
     public static List<String> getListOfMarks(List<Student> list) {
-
         return list.stream()
                 .map(Student::getMark)
                 .collect(Collectors.toList());
