@@ -26,6 +26,7 @@ public class SQL_SELECT {
      *  SELECT * FROM employees WHERE first_name='Denis' AND (gender='M' OR gender='F');
      *------IN--------------NOT IN-------------------------------------------------------------
      * SELECT * FROM employees WHERE first_name IN ('Denis', 'MArk', 'Nathan');
+     * SELECT * FROM employees WHERE salary IN (1000, '2000, 1500);
      * SELECT * FROM employees WHERE first_name NOT IN ('Denis', 'MArk', 'Nathan');
      * --------NOT LIKE---------------LIKE----------------------------------------------------pattern matching
      * SELECT * FROM employees WHERE first_name LIKE('Mar%');   - returns all starting with 'Mar....'
