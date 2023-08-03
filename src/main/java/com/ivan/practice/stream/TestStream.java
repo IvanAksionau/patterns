@@ -1,9 +1,6 @@
 package com.ivan.practice.stream;
 
-import java.util.Arrays;
-import java.util.Collections;
-import java.util.Comparator;
-import java.util.List;
+import java.util.*;
 import java.util.stream.Collectors;
 import java.util.stream.DoubleStream;
 import java.util.stream.Stream;
@@ -67,6 +64,19 @@ public class TestStream {
                 .collect(Collectors.toList());
         Collections.reverse(collected);
         return collected;
+
+    }
+
+    private static void extracted() {
+        Map<String, Student> books = new HashMap<String, Student>() {{
+            put("key1", new Student("9"));
+            put("key2", new Student("8"));
+        }};
+
+        List<String> keys = books.entrySet().stream()
+                .filter(e -> Integer.parseInt(e.getValue().getMark()) > 8 )
+                .map(Map.Entry::getKey)
+                .collect(Collectors.toList());
     }
 
     private static boolean isNumeric(final String str) {
