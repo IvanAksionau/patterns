@@ -1,6 +1,7 @@
 package com.ivan.practice.stream;
 
 import java.util.*;
+import java.util.function.Function;
 import java.util.stream.Collectors;
 import java.util.stream.DoubleStream;
 import java.util.stream.Stream;
@@ -91,12 +92,29 @@ public class TestStream {
         return true;
     }
 
+    Integer sum(List<Integer> numbers) {
+        int asInt = numbers.stream().mapToInt(Integer::intValue).min().getAsInt();
+        return numbers.stream().mapToInt(Integer::intValue).sum();
+    }
+
     public static List<Student> sortStudentListByAverageMarRemoveDuplicated(List<Student> list, int range) {
         return list.stream()
                 .sorted(Comparator.comparing(it -> Integer.parseInt(it.getMark())))
+//                .mapToInt(it -> Integer.parseInt(it.getMark())).sum()
                 .distinct()
                 .limit(range)
                 .collect(Collectors.toList());
+    }
+
+    private static void extracted1() {
+        Function<Double, Double> log = Math::log;
+        Function<Double, Double> sqrt = Math::sqrt;
+        Function<Double, Double> logThenSqrt = sqrt.compose(log);
+// Output: 1.06
+        Function<Double, Double> sqrtThenLog = sqrt.andThen(log);
+
+        Double apply = sqrtThenLog.apply(1.3);
+// Output: 0.57
     }
 
     public static Student getBestStudentFromList(List<Student> list) {
